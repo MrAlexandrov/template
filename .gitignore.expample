@@ -1,0 +1,11 @@
+.cache
+.vscode/
+!.vscode/extensions.json
+build*
+.github
+.gitignore
+*.txt
+!CMakeLists.txt
+notes/
+coverage/
+*.profdata

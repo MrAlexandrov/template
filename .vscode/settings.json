@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "iosfwd": "cpp"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": true,
+    "cmake.buildBeforeRun": true,
+    "cmake.generator": "Ninja",
+    "clangd.enableCodeCompletion": true,
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--log=verbose",
+        "--enable-config",
+        "--background-index",
+        "--clang-tidy",
+    ],
+    "clangd.fallbackFlags": [
+        "-std=c++20",
+        "-I${workspaceFolder}/src",
+        "-I${workspaceFolder}/include",
+    ],
+}
