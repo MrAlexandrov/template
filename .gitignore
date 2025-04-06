@@ -3,9 +3,11 @@
 !.vscode/extensions.json
 build*
 .github
+!.github/workflows/ci.yaml
 .gitignore
 *.txt
 !CMakeLists.txt
 notes/
 coverage/
 *.profdata
+actions-runner
