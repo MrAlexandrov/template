@@ -1,7 +1,11 @@
 #include <gtest/gtest.h>
 #include "project_template.hpp"
 
-using namespace NProject_template;
+namespace NProject_template {
+
+
+
+} // namespace NProject_template
 
 
 
