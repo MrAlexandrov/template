@@ -12,7 +12,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 file(GLOB SRC_FILES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 
-add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/main.cpp)
+add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/main.cpp ${SRC_FILES})
 
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
