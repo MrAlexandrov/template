@@ -1,0 +1,10 @@
+---
+IndentWidth: 4
+AlignArrayOfStructures: Left
+AllowShortLambdasOnASingleLine: Empty
+SpaceBeforeCpp11BracedList: false
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AlignAfterOpenBracket: BlockIndent
+BinPackParameters: true

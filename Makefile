@@ -29,6 +29,9 @@ clang-tidy: build
 	| xargs -P$(NPROCS) -n1 clang-tidy --p=build \
 	  --extra-arg=-std=c++20
 
+format:
+	find . -name "*.cpp" -o -name "*.hpp" | xargs clang-format -i
+
 clean:
 	@echo "==> Cleaning up..."
 	@rm -rf $(BUILD_DIR)
@@ -38,10 +41,10 @@ rebuild: clean build
 
 install:
 	sudo apt-get update
-	sudo apt-get install -y cmake clang libgtest-dev ninja-build clang-tidy
+	sudo apt-get install -y cmake clang libgtest-dev ninja-build clang-tidy clang-format
 
 coverage: test
 	@llvm-profdata merge -sparse $(BUILD_DIR)/tests/default.profraw -o project_template.profdata
 	@llvm-cov show $(BUILD_DIR)/tests/test_project_template -instr-profile=project_template.profdata -format=html -show-branches=count -output-dir=coverage
 
-.PHONY: all build test clean rebuild install
+.PHONY: all build test clean rebuild install coverage format

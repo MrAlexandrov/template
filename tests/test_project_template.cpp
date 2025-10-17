@@ -1,5 +1,5 @@
-#include <gtest/gtest.h>
 #include "project_template.hpp"
+#include <gtest/gtest.h>
 
 namespace NProject_template {
 
