@@ -8,3 +8,4 @@ AllowShortFunctionsOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: Never
 AlignAfterOpenBracket: BlockIndent
 BinPackParameters: true
+PointerAlignment: Left
