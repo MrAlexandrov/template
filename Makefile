@@ -3,7 +3,7 @@ PROJECT_NAME = project_template
 INPUT_FILE = input.txt
 OUTPUT_FILE = output.txt
 
-NPROCS ?= $(shell nproc)
+NPROCS ?= $(shell nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
 
 BUILD_DIR = build
 
