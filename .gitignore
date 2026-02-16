@@ -4,7 +4,6 @@
 build*
 .github
 !.github/workflows/ci.yaml
-.gitignore
 *.txt
 !CMakeLists.txt
 coverage/
